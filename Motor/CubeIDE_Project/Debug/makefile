@@ -60,8 +60,8 @@ all: main-build
 main-build: Moteurs.elf secondary-outputs
 
 # Tool invocations
-Moteurs.elf Moteurs.map: $(OBJS) $(USER_OBJS) /media/bilal/SDCARD/EnseaDronesOption-main/Software/STM32/Peripherals/Motors/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Moteurs.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/media/bilal/SDCARD/EnseaDronesOption-main/Software/STM32/Peripherals/Motors/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Moteurs.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Moteurs.elf Moteurs.map: $(OBJS) $(USER_OBJS) /home/bilal/Documents/GitHub/Option_Drone/Motor/CubeIDE_Project/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Moteurs.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/bilal/Documents/GitHub/Option_Drone/Motor/CubeIDE_Project/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Moteurs.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
