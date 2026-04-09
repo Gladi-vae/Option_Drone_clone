@@ -56,12 +56,12 @@ Dans `main.c` :
 | --------- | --------- |
 | VCC       | 3.3V    |
 | GND       | GND       |
-| CE        | GPIO      |
-| CSN       | GPIO      |
-| SCK       | SPI       |
-| MOSI      | SPI       |
-| MISO      | SPI       |
-| IRQ       | GPIO EXTI |
+| CE        | PB15      |
+| CSN       | PA11      |
+| SCK       | PC10      |
+| MOSI      | PC12      |
+| MISO      | PC11      |
+| IRQ       | PA10      |
 
 
 
