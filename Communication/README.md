@@ -106,20 +106,6 @@ nrf24l01p_rx_init(2500, _250kbps);
 * Baudrate : **115200**
 * Format : 8N1
 
-### TX → PC
-
-* `TX_OK`
-* `TX_ECHEC`
-* `TIMEOUT`
-
-### RX → PC
-
-```
-Recu: <message>
-```
-
----
-
 ## Gestion des erreurs
 
 En cas de timeout :
