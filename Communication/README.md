@@ -1,6 +1,6 @@
 # STM32 nRF24L01+ – Transmitter / Receiver (Unified)
 
-* TURGUT Ibrahim
+* TURGUT Iprahim
 * PREVOST Alexian
 * Mbassi Ewolo Loic Aron
 
